@@ -6,6 +6,16 @@ from torch.utils.data import DataLoader, Dataset
 import torchaudio
 from torchaudio.datasets import SPEECHCOMMANDS
 
+# Patch torchaudio.load to use soundfile directly to bypass torchcodec issues on Windows
+def custom_load(filepath, *args, **kwargs):
+    import soundfile as sf
+    data, sr = sf.read(filepath)
+    tensor = torch.from_numpy(data).float()
+    if tensor.dim() == 1:
+        tensor = tensor.unsqueeze(0)
+    return tensor, sr
+torchaudio.load = custom_load
+
 from model import SpeechCNN, calculate_model_metrics
 from melbanks import LogMelFilterBanks
 
@@ -16,8 +26,9 @@ class YesNoDataset(Dataset):
         self.dataset = SPEECHCOMMANDS(root, subset=subset, download=True)
         # Filter yes/no classes according to exercise constraint
         self.indices = []
-        for i in range(len(self.dataset)):
-            label = self.dataset[i][2]
+        import os
+        for i, path in enumerate(self.dataset._walker):
+            label = os.path.basename(os.path.dirname(path))
             if label in ['yes', 'no']:
                 self.indices.append(i)
         
@@ -120,7 +131,7 @@ def main():
     
     # Record to a output file to track metric parameters
     with open('training_log.csv', 'a') as f:
-        f.write(f"{args.n_mels},{args.groups},{params},{flops},{test_acc},{train_loss},{epoch_time}\\n")
+        f.write(f"{args.n_mels},{args.groups},{params},{flops},{test_acc},{train_loss},{epoch_time}\n")
         
 if __name__ == '__main__':
     main()

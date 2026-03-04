@@ -3,9 +3,9 @@ import os
 from itertools import product
 
 def run_experiment(n_mels, groups):
-    print(f"=== Running experiment: n_mels={n_mels}, groups={groups} ===")
+    print(f"=== Running experiment: n_mels={n_mels}, groups={groups} ===", flush=True)
     cmd = [
-        "python3", "train.py", 
+        "python", "-u", "train.py",
         "--n_mels", str(n_mels), 
         "--groups", str(groups), 
         "--epochs", "2"  # short epochs for report speed
