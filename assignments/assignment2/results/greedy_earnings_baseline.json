@@ -1,0 +1,1622 @@
+{
+    "config": {
+        "dataset": "data/earnings22_test",
+        "model_name": "facebook/wav2vec2-base-100h",
+        "lm_model_path": null,
+        "beam_width": 3,
+        "alpha": 1.0,
+        "beta": 1.0,
+        "temperature": 1.0,
+        "methods": [
+            "greedy"
+        ]
+    },
+    "metrics": {
+        "greedy": {
+            "wer": 0.5496987951807228,
+            "cer": 0.25578503460207613
+        }
+    },
+    "samples": [
+        {
+            "id": 0,
+            "audio": "data/earnings22_test/sample_000000.wav",
+            "reference": "but happy with what we've been seeing here",
+            "hypotheses": {
+                "greedy": "wile heaby bith what bes bin seeing he"
+            }
+        },
+        {
+            "id": 1,
+            "audio": "data/earnings22_test/sample_000001.wav",
+            "reference": "i just just curious to get your sense on on kind of visibility of of this business because it's obviously been very q4 loaded over the last couple of years",
+            "hypotheses": {
+                "greedy": "i just just curious to get your san song on paate visibility off of this business cause it's always have been very cufourloaded over the last couple of years om"
+            }
+        },
+        {
+            "id": 2,
+            "audio": "data/earnings22_test/sample_000002.wav",
+            "reference": "you also saw that we have a new leader lee she's joined us uh as the new president apac in december",
+            "hypotheses": {
+                "greedy": "you also saw that be aver a new leader so tungly she joins us  as the new present apac in december"
+            }
+        },
+        {
+            "id": 3,
+            "audio": "data/earnings22_test/sample_000003.wav",
+            "reference": "uh and for the full year",
+            "hypotheses": {
+                "greedy": "and fouht a fol yet"
+            }
+        },
+        {
+            "id": 4,
+            "audio": "data/earnings22_test/sample_000004.wav",
+            "reference": "uh morning uh oliver and stefan",
+            "hypotheses": {
+                "greedy": "a morning yan foliva an stepan a"
+            }
+        },
+        {
+            "id": 5,
+            "audio": "data/earnings22_test/sample_000005.wav",
+            "reference": "as you would expect now obviously some of the pipeline needs to be rebuilt trying to ask for all others enterprise software companies out there as well",
+            "hypotheses": {
+                "greedy": "as you would expect now ovestee some of the piblanice to be rebild min to anso all others and the rival of pracompiens altersmer"
+            }
+        },
+        {
+            "id": 6,
+            "audio": "data/earnings22_test/sample_000006.wav",
+            "reference": "yeah maybe uh a thought would be uh competition point",
+            "hypotheses": {
+                "greedy": "there may be a i thought with a yermater competition point ah"
+            }
+        },
+        {
+            "id": 7,
+            "audio": "data/earnings22_test/sample_000007.wav",
+            "reference": "firstly part of the growth stems from higher volumes with existing customers as a result of our continued cross and upselling as well as winning new customers at higher prices",
+            "hypotheses": {
+                "greedy": "ortly part of the grot stems from higha volumes with existing catimet an the revout of our continued crofft n upselling as well as winning new custime at higher prises"
+            }
+        },
+        {
+            "id": 8,
+            "audio": "data/earnings22_test/sample_000008.wav",
+            "reference": "like just to really understand what are the w what the features are",
+            "hypotheses": {
+                "greedy": "whichust really understand what of the wwhat the features are e"
+            }
+        },
+        {
+            "id": 9,
+            "audio": "data/earnings22_test/sample_000009.wav",
+            "reference": "but use these joint use case use cases and success stories as reference for other potential customers",
+            "hypotheses": {
+                "greedy": "but youisthese joined youiscates usgavis and success doris as reference for other potential castina am"
+            }
+        },
+        {
+            "id": 10,
+            "audio": "data/earnings22_test/sample_000010.wav",
+            "reference": "uh overall clearly the business remains very scalable despite our strong push into adjacent markets and the even stronger push into our enterprise business is around ninety three",
+            "hypotheses": {
+                "greedy": "a foo clearly the business remains very sgalable despite our strong push into achasand markets and the even stronger push into or enterprise business whitharound ninety three perst"
+            }
+        },
+        {
+            "id": 11,
+            "audio": "data/earnings22_test/sample_000011.wav",
+            "reference": "so very strong development i would say",
+            "hypotheses": {
+                "greedy": "d so rerystrong development i would say"
+            }
+        },
+        {
+            "id": 12,
+            "audio": "data/earnings22_test/sample_000012.wav",
+            "reference": "could you please remind us what your expected impact may be in two thousand and twenty two",
+            "hypotheses": {
+                "greedy": "could you please remind us what you expect the infact may be in"
+            }
+        },
+        {
+            "id": 13,
+            "audio": "data/earnings22_test/sample_000013.wav",
+            "reference": "look i think it's just straight up uh to cancel them",
+            "hypotheses": {
+                "greedy": "y look i think it's just straight up or to cantle them"
+            }
+        },
+        {
+            "id": 14,
+            "audio": "data/earnings22_test/sample_000014.wav",
+            "reference": "all right thank you",
+            "hypotheses": {
+                "greedy": "gidipove i thankey"
+            }
+        },
+        {
+            "id": 15,
+            "audio": "data/earnings22_test/sample_000015.wav",
+            "reference": "i don't think so frankly",
+            "hypotheses": {
+                "greedy": "ii don't think so frankly"
+            }
+        },
+        {
+            "id": 16,
+            "audio": "data/earnings22_test/sample_000016.wav",
+            "reference": "uh sorry into the brand equity partnerships",
+            "hypotheses": {
+                "greedy": "er as i inter e brant emity"
+            }
+        },
+        {
+            "id": 17,
+            "audio": "data/earnings22_test/sample_000017.wav",
+            "reference": "um uh and the other half being classical and engagement manage connectivity uh customer interaction um products and so forth",
+            "hypotheses": {
+                "greedy": "am  and the other half a being classicutanzo and engagement manage connectivity a cama interaction a product and so for so"
+            }
+        },
+        {
+            "id": 18,
+            "audio": "data/earnings22_test/sample_000018.wav",
+            "reference": "uh recently we started working with abb one of the world's leading global technology companies",
+            "hypotheses": {
+                "greedy": "ah recently we staurted workin toe with abiby one of the word leading glober acnology companies"
+            }
+        },
+        {
+            "id": 19,
+            "audio": "data/earnings22_test/sample_000019.wav",
+            "reference": "and and i would expect uh clearly that overall we continue to improve our nrr uh for the full year which was li like ninety eight",
+            "hypotheses": {
+                "greedy": "and i would expect ar clearly that owo we continue to improve our in our ar a for the fullyar which was luck like ninety eight precent b"
+            }
+        },
+        {
+            "id": 20,
+            "audio": "data/earnings22_test/sample_000020.wav",
+            "reference": "welcome to the conference call of teamviewer ag",
+            "hypotheses": {
+                "greedy": "welcome  to the conference call of cim pur achi a"
+            }
+        },
+        {
+            "id": 21,
+            "audio": "data/earnings22_test/sample_000021.wav",
+            "reference": "we have closed a commercial agreement with them and we are now jointly improving in marketing and augmented reality solutions to digitalize the food industry",
+            "hypotheses": {
+                "greedy": "we have clothed the commercial agreement with them and we are now jointly improvin and marketing an ougmentaduelity silution pudig julite the foot industry th"
+            }
+        },
+        {
+            "id": 22,
+            "audio": "data/earnings22_test/sample_000022.wav",
+            "reference": "you can see some more figures really impressive figures on our two major sponsorships on the slide of slide seventeen",
+            "hypotheses": {
+                "greedy": "you can see some more figur rel impressed e siga on our two major bundlships r on the five of five seventeen"
+            }
+        },
+        {
+            "id": 23,
+            "audio": "data/earnings22_test/sample_000023.wav",
+            "reference": "thank you robert",
+            "hypotheses": {
+                "greedy": "thank you abot"
+            }
+        },
+        {
+            "id": 24,
+            "audio": "data/earnings22_test/sample_000024.wav",
+            "reference": "so we really believe uh we have we have set a clear course uh and we deliver on um on this",
+            "hypotheses": {
+                "greedy": "s te  ry belief ar we have for we have theticllya coth a and we deliver on am on"
+            }
+        },
+        {
+            "id": 25,
+            "audio": "data/earnings22_test/sample_000025.wav",
+            "reference": "and our subscriber base therefore slightly decreased by net one thousand uh subscribers during the fourth quarter which was pretty much in line with with our estimates",
+            "hypotheses": {
+                "greedy": "and il was subscribe a base therefore slightly decreas by ned thousand  subscribe us during the forth quarter which was pretty much alined with with our estimates a"
+            }
+        },
+        {
+            "id": 26,
+            "audio": "data/earnings22_test/sample_000026.wav",
+            "reference": "i think we have discussed it multiple times",
+            "hypotheses": {
+                "greedy": "ver thing we havendiscusse them mauteble times p"
+            }
+        },
+        {
+            "id": 27,
+            "audio": "data/earnings22_test/sample_000027.wav",
+            "reference": "uh moving on to cash generation clearly a continuous highlight of teamviewer",
+            "hypotheses": {
+                "greedy": "a moving on to casgeneration lili a continues hylad of cimbion b"
+            }
+        },
+        {
+            "id": 28,
+            "audio": "data/earnings22_test/sample_000028.wav",
+            "reference": "uh and these partnerships are a great opportunity to join forces with both those parties and leverage our sales reach globally",
+            "hypotheses": {
+                "greedy": "industries a emty pama chips our great opportunity to join forces with those thpadies and leverich our tats reach goberly"
+            }
+        },
+        {
+            "id": 29,
+            "audio": "data/earnings22_test/sample_000029.wav",
+            "reference": "we signed to partnerships with football club manchester united and the formula one and the formula e racing teams of mercedes",
+            "hypotheses": {
+                "greedy": "d we signed two harmeships wih fotbor glamentathy united and the formula one and the formula erathingtims of mercidus a"
+            }
+        },
+        {
+            "id": 30,
+            "audio": "data/earnings22_test/sample_000030.wav",
+            "reference": "a the net retention rate increased quite nicely as you can see on the graph uh on the left hand side",
+            "hypotheses": {
+                "greedy": "the net protentonraide increased quite nicely as yo can see on the graff on the left handside re"
+            }
+        },
+        {
+            "id": 31,
+            "audio": "data/earnings22_test/sample_000031.wav",
+            "reference": "at our customer's request this conference will be recorded",
+            "hypotheses": {
+                "greedy": "and our castomasocrets disconference wil verycartot"
+            }
+        },
+        {
+            "id": 32,
+            "audio": "data/earnings22_test/sample_000032.wav",
+            "reference": "we provide extensive state of the art augmented reality to ford to ford's diagnostics teams which must go through complex technical issues when checking vehicles",
+            "hypotheses": {
+                "greedy": "we provid extend eof the ap ogmentag relin forms to forth diogonostixteen which must go through complex technical issues when chenking veicas th"
+            }
+        },
+        {
+            "id": 33,
+            "audio": "data/earnings22_test/sample_000033.wav",
+            "reference": "as as it on the shorter",
+            "hypotheses": {
+                "greedy": "at teknat on thechatermariv"
+            }
+        },
+        {
+            "id": 34,
+            "audio": "data/earnings22_test/sample_000034.wav",
+            "reference": "and in second question um are you able to broadly quantify the impacts on the strategic partnerships with sap and google as you think ahead",
+            "hypotheses": {
+                "greedy": "an insecond question a'm are you able to broadly quantify the impact from the stritegic partnerships with ethipian gudo as you think ahead s"
+            }
+        },
+        {
+            "id": 35,
+            "audio": "data/earnings22_test/sample_000035.wav",
+            "reference": "uh predominantly more bias towards ot especially obviously the frontline solutions as well or the whole ar suite",
+            "hypotheses": {
+                "greedy": "a predominantly more bious towards oty especially a ovity defront lyne a solutions as well a'l behold a arsweet than a"
+            }
+        },
+        {
+            "id": 36,
+            "audio": "data/earnings22_test/sample_000036.wav",
+            "reference": "and as you can see at the bottom of this slide uh our financing structure is very solid and long term secured with no refinancing needs for the next two to three years",
+            "hypotheses": {
+                "greedy": "and as you can see at the bottom of the flihte our finance in structure is very solit and te long tums securet with no refinancinates the next two te three years s"
+            }
+        },
+        {
+            "id": 37,
+            "audio": "data/earnings22_test/sample_000037.wav",
+            "reference": "we also had and will continue to have relatively low taxes",
+            "hypotheses": {
+                "greedy": "we all its a head and we'll continue to avfret if the low texes"
+            }
+        },
+        {
+            "id": 38,
+            "audio": "data/earnings22_test/sample_000038.wav",
+            "reference": "following a sustainable and profitable growth trajectory",
+            "hypotheses": {
+                "greedy": "calling a fustanable and proffitable groth projectory ou"
+            }
+        },
+        {
+            "id": 39,
+            "audio": "data/earnings22_test/sample_000039.wav",
+            "reference": "um we'd have a tough year for apac overall but with a very strong finish",
+            "hypotheses": {
+                "greedy": "three cents i am mid ofe taff yofe apec over allabut w te bary strong finish tha"
+            }
+        },
+        {
+            "id": 40,
+            "audio": "data/earnings22_test/sample_000040.wav",
+            "reference": "or is it something that you might revisit and sort of say if growth expectations on exactly what what you want them to be",
+            "hypotheses": {
+                "greedy": "future o is it's something tat ye migt reviits an son to say it growf expectations on exactly what what you want them to be"
+            }
+        },
+        {
+            "id": 41,
+            "audio": "data/earnings22_test/sample_000041.wav",
+            "reference": "for the medium outlook this remains unchanged as well",
+            "hypotheses": {
+                "greedy": "oami jamaudrok at this remains unchane as well we"
+            }
+        },
+        {
+            "id": 42,
+            "audio": "data/earnings22_test/sample_000042.wav",
+            "reference": "uh but i think that's it for the time being",
+            "hypotheses": {
+                "greedy": "fiving dats it cortotime"
+            }
+        },
+        {
+            "id": 43,
+            "audio": "data/earnings22_test/sample_000043.wav",
+            "reference": "thank you",
+            "hypotheses": {
+                "greedy": "and ke"
+            }
+        },
+        {
+            "id": 44,
+            "audio": "data/earnings22_test/sample_000044.wav",
+            "reference": "for the fourth quarter you can image for the enterprise was significantly higher",
+            "hypotheses": {
+                "greedy": "for the fourth uarden canimate for th enterprise was significantly hia"
+            }
+        },
+        {
+            "id": 45,
+            "audio": "data/earnings22_test/sample_000045.wav",
+            "reference": "the global mega trends are still well intact and will continue to support our growth trajectory uh in two thousand and twenty two",
+            "hypotheses": {
+                "greedy": "the glober make our triends are stay look well in tect and will continue to support our croas regutory a intwenty twenty two"
+            }
+        },
+        {
+            "id": 46,
+            "audio": "data/earnings22_test/sample_000046.wav",
+            "reference": "uh let them be on the on the platform and use our products and get to know other use cases",
+            "hypotheses": {
+                "greedy": "ah let them be onder on the platform am and you tou product and get to no other outh cativhe"
+            }
+        },
+        {
+            "id": 47,
+            "audio": "data/earnings22_test/sample_000047.wav",
+            "reference": "so really seeing a shift there",
+            "hypotheses": {
+                "greedy": "though weir seeing ashift them we"
+            }
+        },
+        {
+            "id": 48,
+            "audio": "data/earnings22_test/sample_000048.wav",
+            "reference": "um and um in some markets this is competitively priced and others uh it's maybe a bit too high",
+            "hypotheses": {
+                "greedy": "am n dam in tamarkes tis is comparatively prised another or if may be be to hight ave"
+            }
+        },
+        {
+            "id": 49,
+            "audio": "data/earnings22_test/sample_000049.wav",
+            "reference": "and if you sum all of this up i think teamviewer clearly has a highly attractive financial profile",
+            "hypotheses": {
+                "greedy": "and if you're come out of that sop i think timuarlerly hads to highdet like the financial profile an"
+            }
+        },
+        {
+            "id": 50,
+            "audio": "data/earnings22_test/sample_000050.wav",
+            "reference": "we were able to achieve this positive development primarily through our successful app and cross selling",
+            "hypotheses": {
+                "greedy": "we were able to achieve this part of development primarily thruour successful apan troselling o"
+            }
+        },
+        {
+            "id": 51,
+            "audio": "data/earnings22_test/sample_000051.wav",
+            "reference": "so overall very pleased with with the momentum which we've seen",
+            "hypotheses": {
+                "greedy": "fol wa a very blease witwith the moment which we have seen"
+            }
+        },
+        {
+            "id": 52,
+            "audio": "data/earnings22_test/sample_000052.wav",
+            "reference": "i mean that's hardly material contributions from that so all of the goals which you have seen is pretty much organic growth",
+            "hypotheses": {
+                "greedy": "i mean that's hardly material contributions from that og the ow a e go with which you have seen is pretty much organnigrot"
+            }
+        },
+        {
+            "id": 53,
+            "audio": "data/earnings22_test/sample_000053.wav",
+            "reference": "therefore our effective uh tax cash rate remains pretty low",
+            "hypotheses": {
+                "greedy": "a orar efective a tex cachrade remains pretty lo"
+            }
+        },
+        {
+            "id": 54,
+            "audio": "data/earnings22_test/sample_000054.wav",
+            "reference": "so um um i think that in going hypothesis is wrong um on that end",
+            "hypotheses": {
+                "greedy": "so am aan that in going ipothosis is irom am hon"
+            }
+        },
+        {
+            "id": 55,
+            "audio": "data/earnings22_test/sample_000055.wav",
+            "reference": "and i have three questions",
+            "hypotheses": {
+                "greedy": "to imahafry gresons ci"
+            }
+        },
+        {
+            "id": 56,
+            "audio": "data/earnings22_test/sample_000056.wav",
+            "reference": "i think it's a bit early to give precise guidance",
+            "hypotheses": {
+                "greedy": "tat think is abit terly to give precise gideands pu"
+            }
+        },
+        {
+            "id": 57,
+            "audio": "data/earnings22_test/sample_000057.wav",
+            "reference": "so um in line with the top line",
+            "hypotheses": {
+                "greedy": "so a in line lift er top lands"
+            }
+        },
+        {
+            "id": 58,
+            "audio": "data/earnings22_test/sample_000058.wav",
+            "reference": "a reminder if you have a question for our speakers please dial one to enter the queue",
+            "hypotheses": {
+                "greedy": "asriana if you have a question for us because le is te are ontanded a cu"
+            }
+        },
+        {
+            "id": 59,
+            "audio": "data/earnings22_test/sample_000059.wav",
+            "reference": "no no meaningful reduction",
+            "hypotheses": {
+                "greedy": "no no meaning ful redaction"
+            }
+        },
+        {
+            "id": 60,
+            "audio": "data/earnings22_test/sample_000060.wav",
+            "reference": "another very different example uh use case which i want to show is our cooperation with austria which is one of the largest banking groups in central and eastern europe",
+            "hypotheses": {
+                "greedy": "mathar very different exthamper a youthkate a which i want to show ith our coperation with attebangostria which is one of the largest banking groups in centra and eston europe the"
+            }
+        },
+        {
+            "id": 61,
+            "audio": "data/earnings22_test/sample_000061.wav",
+            "reference": "uh growth in the americas actually was clearly biased towards enterprise very strong pipeline conversion there",
+            "hypotheses": {
+                "greedy": "groth in the america's actally was clearly biouse towards andabrins very strong pipe on convertionder a"
+            }
+        },
+        {
+            "id": 62,
+            "audio": "data/earnings22_test/sample_000062.wav",
+            "reference": "we will now begin our question and answer session",
+            "hypotheses": {
+                "greedy": "we wire now begin o preston e non folfesion if"
+            }
+        },
+        {
+            "id": 63,
+            "audio": "data/earnings22_test/sample_000063.wav",
+            "reference": "uh clearly we see uh that there is significant um kind of competition uh for workforce across all markets",
+            "hypotheses": {
+                "greedy": "a clearly with thee ah that there is significant ama cor competition a for workfort across all market a"
+            }
+        },
+        {
+            "id": 64,
+            "audio": "data/earnings22_test/sample_000064.wav",
+            "reference": "that's the first question",
+            "hypotheses": {
+                "greedy": "othat's mystuw s"
+            }
+        },
+        {
+            "id": 65,
+            "audio": "data/earnings22_test/sample_000065.wav",
+            "reference": "this is one of the aspects that make us confident about our enterprise business",
+            "hypotheses": {
+                "greedy": "industry tis one of the aspacts that make up confrident about alla and thapris biem re"
+            }
+        },
+        {
+            "id": 66,
+            "audio": "data/earnings22_test/sample_000066.wav",
+            "reference": "yeah uh good point",
+            "hypotheses": {
+                "greedy": "gap a the good poin t"
+            }
+        },
+        {
+            "id": 67,
+            "audio": "data/earnings22_test/sample_000067.wav",
+            "reference": "in the next few slides uh slide seven now",
+            "hypotheses": {
+                "greedy": "in the next teslides iflied  avenal"
+            }
+        },
+        {
+            "id": 68,
+            "audio": "data/earnings22_test/sample_000068.wav",
+            "reference": "uh and that was quite a drag on our nrr",
+            "hypotheses": {
+                "greedy": "a and that it was quite a drak on our ana ar ta"
+            }
+        },
+        {
+            "id": 69,
+            "audio": "data/earnings22_test/sample_000069.wav",
+            "reference": "i would also expect a moderately uh biased towards the second half",
+            "hypotheses": {
+                "greedy": "i would alwys expect te moderally biousjunantio towards the second t"
+            }
+        },
+        {
+            "id": 70,
+            "audio": "data/earnings22_test/sample_000070.wav",
+            "reference": "okay uh so on the ar side of things i think we disclose at the capital markets day that an atm basis uh operational workflows billings were around thirty million won three and that is subsidized substantially increase in the fourth quarter as you would expect",
+            "hypotheses": {
+                "greedy": "yo gam a so on the ay a i don't thinki think we is goes at e kaptamarke to day that an ati ambaasis a operaton of bop pros biddings were round thirty million wonfrey and that e subsance otencely increased in the forcef warter as you would expect"
+            }
+        },
+        {
+            "id": 71,
+            "audio": "data/earnings22_test/sample_000071.wav",
+            "reference": "we came out at the high end of our pre release numbers with two hundred and fifty seven million euro adjusted ebitda or a forty seven margin",
+            "hypotheses": {
+                "greedy": "we came out at the highend of all prerely slupbers with two hundred tfifty seven million ur a justit ibude  wore a forty cen precent marchan"
+            }
+        },
+        {
+            "id": 72,
+            "audio": "data/earnings22_test/sample_000072.wav",
+            "reference": "so im immaterial an and the same with our upskill",
+            "hypotheses": {
+                "greedy": "to the i immagerial a and the same awithobs"
+            }
+        },
+        {
+            "id": 73,
+            "audio": "data/earnings22_test/sample_000073.wav",
+            "reference": "uh but we still maintain significant firepower to pursue m a",
+            "hypotheses": {
+                "greedy": "but we still maintained ignificant vir power to presue a"
+            }
+        },
+        {
+            "id": 74,
+            "audio": "data/earnings22_test/sample_000074.wav",
+            "reference": "um and we have two partners with this to boost our brand awareness globally really",
+            "hypotheses": {
+                "greedy": "aa and we have two partlars or this to mos our branda whe is globeet ready bo"
+            }
+        },
+        {
+            "id": 75,
+            "audio": "data/earnings22_test/sample_000075.wav",
+            "reference": "i think we have an attractive um compensation system",
+            "hypotheses": {
+                "greedy": "i think we have an attractive aconvetation t"
+            }
+        },
+        {
+            "id": 76,
+            "audio": "data/earnings22_test/sample_000076.wav",
+            "reference": "and i can fit one more in",
+            "hypotheses": {
+                "greedy": "and i fo gond fit one morning a"
+            }
+        },
+        {
+            "id": 77,
+            "audio": "data/earnings22_test/sample_000077.wav",
+            "reference": "so i would say in a way good problem to have because the share of new business to uh to recurring renewal business is still very high",
+            "hypotheses": {
+                "greedy": "though i would say in a way a good problem to halve because the share of new business to ah to recovering renewa business is still very high"
+            }
+        },
+        {
+            "id": 78,
+            "audio": "data/earnings22_test/sample_000078.wav",
+            "reference": "i think overall very strong",
+            "hypotheses": {
+                "greedy": "i think owor very strong"
+            }
+        },
+        {
+            "id": 79,
+            "audio": "data/earnings22_test/sample_000079.wav",
+            "reference": "this underpins our success in billing a leading enterprise business that is delivering strong and sustainable growth",
+            "hypotheses": {
+                "greedy": "this underprints our success in building a leading enterprise business that is delivering strong and sustainable growth lhi"
+            }
+        },
+        {
+            "id": 80,
+            "audio": "data/earnings22_test/sample_000080.wav",
+            "reference": "uh this concludes today's presentation and we now look forward to taking your questions",
+            "hypotheses": {
+                "greedy": "iathis concludes the da's presentation and we now look forward to taking your questions"
+            }
+        },
+        {
+            "id": 81,
+            "audio": "data/earnings22_test/sample_000081.wav",
+            "reference": "but i what is not true is that enterprise is suppressing our margin that uh we have found the enterprise investments back back in the year so to say and ramped up our sales force and also our r d product management and the like",
+            "hypotheses": {
+                "greedy": "mai wwhat is not truit that enterprise is suppressing our margian that ser we have found the enterprise in methmans tek beckin the ye o to say and ramped up our talforts and also oar areinde an aproduct manageman and the likes"
+            }
+        },
+        {
+            "id": 82,
+            "audio": "data/earnings22_test/sample_000082.wav",
+            "reference": "and seasonality yeah you're right",
+            "hypotheses": {
+                "greedy": "ans his nelity oht your right i"
+            }
+        },
+        {
+            "id": 83,
+            "audio": "data/earnings22_test/sample_000083.wav",
+            "reference": "um if i look at q4 there's been a meaningful sort of reduction in the sales and and the marketing lines there presumably around the right sizing",
+            "hypotheses": {
+                "greedy": "am if i look at kufor there's been ameaning ful sort of reduction in the sales and and the marketing lines there presuminably round  the right sizing s"
+            }
+        },
+        {
+            "id": 84,
+            "audio": "data/earnings22_test/sample_000084.wav",
+            "reference": "so that is a lot of the driver the drivers really leadership change only",
+            "hypotheses": {
+                "greedy": "so that e t mote driveor the driver's ledy leader ship change only"
+            }
+        },
+        {
+            "id": 85,
+            "audio": "data/earnings22_test/sample_000085.wav",
+            "reference": "uh now in margin uh you expressed it as having less confidence",
+            "hypotheses": {
+                "greedy": "now in terms of marching  you express it as having les confident"
+            }
+        },
+        {
+            "id": 86,
+            "audio": "data/earnings22_test/sample_000086.wav",
+            "reference": "uh emea contributed billings of eighty six million up sixty",
+            "hypotheses": {
+                "greedy": "odem  imiar contribute billings of eighty six million op sixty percent as"
+            }
+        },
+        {
+            "id": 87,
+            "audio": "data/earnings22_test/sample_000087.wav",
+            "reference": "and also highlighting some of the use cases oliver mentioned which included our frontline solutions",
+            "hypotheses": {
+                "greedy": "annoids a high lighting at om of the us cases orlov ar mention which included allor fornfrencif uselesmot  s"
+            }
+        },
+        {
+            "id": 88,
+            "audio": "data/earnings22_test/sample_000088.wav",
+            "reference": "uh so we don't use any of that for the time being",
+            "hypotheses": {
+                "greedy": "though we don't use any of thet for the time being"
+            }
+        },
+        {
+            "id": 89,
+            "audio": "data/earnings22_test/sample_000089.wav",
+            "reference": "the quality performance of the net retention rate showed uh as i said a strong improvement in the fourth quarter coming up two hundred and five and therefore pushing the overall net retention rate for the full year to ninety eight",
+            "hypotheses": {
+                "greedy": "the guaty performance of then atetane e rage showed aas a sad a strong improvement in the forth quarter coming up to hundred five percent  and therefore pushing the obor netpretention rat for the fulyier to ninety eight percent"
+            }
+        },
+        {
+            "id": 90,
+            "audio": "data/earnings22_test/sample_000090.wav",
+            "reference": "they help us to accelerate our expansion into various strategically relevant vertical industries",
+            "hypotheses": {
+                "greedy": "they help us to eccelerate our expansion into various tochicigly relavant vertico"
+            }
+        },
+        {
+            "id": 91,
+            "audio": "data/earnings22_test/sample_000091.wav",
+            "reference": "not only the amount of enterprise customers increase but also our enterprise billings",
+            "hypotheses": {
+                "greedy": "not only the amount of enterprise catemuth increased but also our enterprised billings wel"
+            }
+        },
+        {
+            "id": 92,
+            "audio": "data/earnings22_test/sample_000092.wav",
+            "reference": "uh this is good achievement",
+            "hypotheses": {
+                "greedy": "ah is is a good achievement"
+            }
+        },
+        {
+            "id": 93,
+            "audio": "data/earnings22_test/sample_000093.wav",
+            "reference": "the next question is coming from hans ubs",
+            "hypotheses": {
+                "greedy": "the next christian of c"
+            }
+        },
+        {
+            "id": 94,
+            "audio": "data/earnings22_test/sample_000094.wav",
+            "reference": "thank you for taking mine as well",
+            "hypotheses": {
+                "greedy": "thank you for setan minad rod"
+            }
+        },
+        {
+            "id": 95,
+            "audio": "data/earnings22_test/sample_000095.wav",
+            "reference": "the chart on the right hand side shows additional proof the enterprise business achieved high billings growth rates throughout two thousand and twenty one and actually accelerated nicely during the year after somewhat slower staff due to the covid retention and right sizing issues in the first quarter of two thousand and twenty one",
+            "hypotheses": {
+                "greedy": "the charp on the right hand sighte the shows additional prof of the enterprise business achieved high buidings grow thraigt through ou twenty twenty one and actually eccelerated nightly during the year after somewhat lower thath due to the covet retention ind writcising issues in the first quarter of twenty twenty one"
+            }
+        },
+        {
+            "id": 96,
+            "audio": "data/earnings22_test/sample_000096.wav",
+            "reference": "this is primarily due to the suspension of the free to paid monetization campaigns which we stopped entirely during the third quarter",
+            "hypotheses": {
+                "greedy": "this is primarily due to the sapension of the free to patmontization compains which we stopped entirely during the third quarter"
+            }
+        },
+        {
+            "id": 97,
+            "audio": "data/earnings22_test/sample_000097.wav",
+            "reference": "and as always we'll conclude today's close q a following the presentation",
+            "hypotheses": {
+                "greedy": "tan hath always will contu te disco with cuiney following the presentation"
+            }
+        },
+        {
+            "id": 98,
+            "audio": "data/earnings22_test/sample_000098.wav",
+            "reference": "uh also google supported us scaling some larger deals also very strong contribution there through indirect relationship support i would say",
+            "hypotheses": {
+                "greedy": "a alto gugl supporter or scin in some largerdis on allso very strong contibution down through indirect relationship support i would say so"
+            }
+        },
+        {
+            "id": 99,
+            "audio": "data/earnings22_test/sample_000099.wav",
+            "reference": "both brands truly global provide an unrivaled reach and marketing power for teamviewer",
+            "hypotheses": {
+                "greedy": "both brants a atually glower provide an unrivaled reach and marketing power fortimor"
+            }
+        },
+        {
+            "id": 100,
+            "audio": "data/earnings22_test/sample_000100.wav",
+            "reference": "yeah",
+            "hypotheses": {
+                "greedy": "a"
+            }
+        },
+        {
+            "id": 101,
+            "audio": "data/earnings22_test/sample_000101.wav",
+            "reference": "the next question is come from mohammed at goldman sachs",
+            "hypotheses": {
+                "greedy": "he nexplesonof conf"
+            }
+        },
+        {
+            "id": 102,
+            "audio": "data/earnings22_test/sample_000102.wav",
+            "reference": "this call has been concluded you may disconnect",
+            "hypotheses": {
+                "greedy": "smen thank you for yo attendants dis cau as beenco"
+            }
+        },
+        {
+            "id": 103,
+            "audio": "data/earnings22_test/sample_000103.wav",
+            "reference": "no not really",
+            "hypotheses": {
+                "greedy": "mri"
+            }
+        },
+        {
+            "id": 104,
+            "audio": "data/earnings22_test/sample_000104.wav",
+            "reference": "uh and during two thousand and twenty we still recognize roughly forty six million of previous perpetual license sales uh and obviously this figure now came down to only around two point six million two thousand and twenty one",
+            "hypotheses": {
+                "greedy": "a and during twenty twen tea we still recognized roughly forty six million of previous perpetualise and sales and obviously this vigana came down to oliaround to point six million twenty twenty one"
+            }
+        },
+        {
+            "id": 105,
+            "audio": "data/earnings22_test/sample_000105.wav",
+            "reference": "as i as you might remember q4 last year was actually not that strong in apac so they also benefited from a lower base",
+            "hypotheses": {
+                "greedy": "that i as you might remember kou for last year was actually not that strong an apex so they ought to benefited from a lowar b"
+            }
+        },
+        {
+            "id": 106,
+            "audio": "data/earnings22_test/sample_000106.wav",
+            "reference": "and now let's take a look at our optics functions uh clearly in line with our key growth initiatives significant investments uh occurred uh as you're all aware especially in the marketing area now reflecting the full impact of the marketing partnerships since q3 that's pretty much a flat line expense",
+            "hypotheses": {
+                "greedy": "an alitic look at te our opecs te functions argilian limes our ce grost in ishifts significant demements a ocurat as you are all aware especiallyin the marting aria now reflecting the fool impact of the marting pardnorships since to three that's pretty much of let line expense"
+            }
+        },
+        {
+            "id": 107,
+            "audio": "data/earnings22_test/sample_000107.wav",
+            "reference": "we continue to enjoy strength cash strong cash flow and actually very high cash conversion",
+            "hypotheses": {
+                "greedy": "be continued to injoy his strength cach strong kachlo an exly very high katch conversion v"
+            }
+        },
+        {
+            "id": 108,
+            "audio": "data/earnings22_test/sample_000108.wav",
+            "reference": "however uh we clearly saw very good improvements com especially compared against q3",
+            "hypotheses": {
+                "greedy": "bas however  need really so very good improvements q especially compared against"
+            }
+        },
+        {
+            "id": 109,
+            "audio": "data/earnings22_test/sample_000109.wav",
+            "reference": "uh so great to have them on board and and it's good to see that their that their roles have actually increased in importance",
+            "hypotheses": {
+                "greedy": "ah asalved wit gray jectmon borton and and scoches ida ter that the are ros of actually increased m"
+            }
+        },
+        {
+            "id": 110,
+            "audio": "data/earnings22_test/sample_000110.wav",
+            "reference": "so uh this is these are two areas where we're investing",
+            "hypotheses": {
+                "greedy": "o a this is these uptoarias wery in veting ams"
+            }
+        },
+        {
+            "id": 111,
+            "audio": "data/earnings22_test/sample_000111.wav",
+            "reference": "okay useful thanks",
+            "hypotheses": {
+                "greedy": "eminate other yuseful man"
+            }
+        },
+        {
+            "id": 112,
+            "audio": "data/earnings22_test/sample_000112.wav",
+            "reference": "overall we recorded the growth of twelve year on year in smb amounting to billings of four hundred and fifty five million and several factors contributed to this growth",
+            "hypotheses": {
+                "greedy": "over all we recarded the growth of twelve passent yeron enethenby amounting to buillings of four hundred fifty five millions and severa taclet contributeits to this groth for"
+            }
+        },
+        {
+            "id": 113,
+            "audio": "data/earnings22_test/sample_000113.wav",
+            "reference": "so really just wondered if you could talk a little bit about your plans in terms of headcount into ' twenty two",
+            "hypotheses": {
+                "greedy": "the rely just wonderd if you could talk a ittle bit about your plans in times of heatkoun into twenty two"
+            }
+        },
+        {
+            "id": 114,
+            "audio": "data/earnings22_test/sample_000114.wav",
+            "reference": "one is our chief product officer one is leading the enterprise uh sales and solution delivering in emea and one is based out of the us really driving the uh augmented reality solutions there with the um president america",
+            "hypotheses": {
+                "greedy": "wantet a our chie proroct offis a wantet leading the enterprise a saves and solution deliverin et in imia a and on it baith out of the uet really driving the a ogmented relity solutions there with the am pretent america"
+            }
+        },
+        {
+            "id": 115,
+            "audio": "data/earnings22_test/sample_000115.wav",
+            "reference": "um of course if we see significant other attraction in other parts of the business and we can suspend it even longer than we'd likely to do so",
+            "hypotheses": {
+                "greedy": "moment mof qaditg with these dignificants ather attraction in other parths of the business and we can suspend it even longer rom than we likely do so"
+            }
+        },
+        {
+            "id": 116,
+            "audio": "data/earnings22_test/sample_000116.wav",
+            "reference": "but it's also important to notice i mean most large customer situations have a mix uh somewhat",
+            "hypotheses": {
+                "greedy": "t what is all s important notive imin most large castomof situations have makes a sumewhat"
+            }
+        },
+        {
+            "id": 117,
+            "audio": "data/earnings22_test/sample_000117.wav",
+            "reference": "thank you",
+            "hypotheses": {
+                "greedy": "lancin"
+            }
+        },
+        {
+            "id": 118,
+            "audio": "data/earnings22_test/sample_000118.wav",
+            "reference": "firstly just on the headcount side",
+            "hypotheses": {
+                "greedy": "fasly just on the headcoun sighed"
+            }
+        },
+        {
+            "id": 119,
+            "audio": "data/earnings22_test/sample_000119.wav",
+            "reference": "uh billings in the fourth quarter grew by twenty four also benefiting from some currency tailwinds as the us dollar strengthened",
+            "hypotheses": {
+                "greedy": "a pillings in the forth quarter crou bat twenty four precent all so benefitend from some currency taywins as the yuestoa strengthened"
+            }
+        },
+        {
+            "id": 120,
+            "audio": "data/earnings22_test/sample_000120.wav",
+            "reference": "this confirms our ability to retain the strong intake of customers which we won from the covid nineteen pull forward demand in the previous year",
+            "hypotheses": {
+                "greedy": "lhis confirms ouability to retain the strong intache of cathemerth which we warn from the covet nineteen pool forwetimand in the previous"
+            }
+        },
+        {
+            "id": 121,
+            "audio": "data/earnings22_test/sample_000121.wav",
+            "reference": "uh slide twenty two uh clearly an important measure uh to reflect uh the stickiness of our customer base",
+            "hypotheses": {
+                "greedy": "ahs lie twenty two  cleelian important measure a to reflect a the stigars of our costmar bases to"
+            }
+        },
+        {
+            "id": 122,
+            "audio": "data/earnings22_test/sample_000122.wav",
+            "reference": "so uh really significant decisions and steps uh towards um uh continued profitable growth",
+            "hypotheses": {
+                "greedy": "o a really significant a decisions and stephs o towards am a continuei proftiblero s"
+            }
+        },
+        {
+            "id": 123,
+            "audio": "data/earnings22_test/sample_000123.wav",
+            "reference": "uh frankly most those new billings relate to more sticky enterprise customers with deeper embedded use cases such as ar or managed enterprise connectivity like abb as as oliver mentioned",
+            "hypotheses": {
+                "greedy": "frankly mors those new bildings relate to more sticky enterprise customes with deeper inbedded use cases tuchas  ar or manch in te brises connectivity like abi bies is all ever mentiond"
+            }
+        },
+        {
+            "id": 124,
+            "audio": "data/earnings22_test/sample_000124.wav",
+            "reference": "now it's obviously all about increasing and billing the pipeline and start converting the same in in the second uh second half",
+            "hypotheses": {
+                "greedy": "now it's olwers o all about increasing and building to pype land and father conversing the same in in the second  second half a"
+            }
+        },
+        {
+            "id": 125,
+            "audio": "data/earnings22_test/sample_000125.wav",
+            "reference": "and i would also say that of course what you call make execution more consistent i mean if i turn it around the inconsistency is of course also due to the fact that we see really many positive movements",
+            "hypotheses": {
+                "greedy": "but i would or to say that of corse what you call a mak execution or consist than i mean if i turn itd around the inconsistencies of cos arzo deu to the fact that we see really many postive movement and"
+            }
+        },
+        {
+            "id": 126,
+            "audio": "data/earnings22_test/sample_000126.wav",
+            "reference": "anything especially the fourth quarter",
+            "hypotheses": {
+                "greedy": "anythin specilo the fals fot on"
+            }
+        },
+        {
+            "id": 127,
+            "audio": "data/earnings22_test/sample_000127.wav",
+            "reference": "and therefore and now we've set ourselves a sustainable year and leverage target of roughly one point five times adjusted ebitda",
+            "hypotheses": {
+                "greedy": "and therefore a now we have said ourselves a sustayin ab year ind t levige target of roughly wone point five times a chate bidier a"
+            }
+        },
+        {
+            "id": 128,
+            "audio": "data/earnings22_test/sample_000128.wav",
+            "reference": "the next questions come from james goodman at barclays",
+            "hypotheses": {
+                "greedy": "he max cursons come from jame's good man at barklge"
+            }
+        },
+        {
+            "id": 129,
+            "audio": "data/earnings22_test/sample_000129.wav",
+            "reference": "uh what we focus on is uh feature richness and quality of connectivity to all kinds of devices across all operating systems reliability performance global footprint",
+            "hypotheses": {
+                "greedy": "ah what refokes on is a feature richness and quality of conectivity to all kinds of devices the cross all operating systems reliability performance lobel footprent a"
+            }
+        },
+        {
+            "id": 130,
+            "audio": "data/earnings22_test/sample_000130.wav",
+            "reference": "if it's purely single person connecting um uh we are under price pressure we tend to be not as competitive enough",
+            "hypotheses": {
+                "greedy": "i it's purely single person connecting am we are in the prise presure we tend to be not ef competitive enough th"
+            }
+        },
+        {
+            "id": 131,
+            "audio": "data/earnings22_test/sample_000131.wav",
+            "reference": "uh let me close with some final remarks",
+            "hypotheses": {
+                "greedy": "let me close with tem finar remark ser"
+            }
+        },
+        {
+            "id": 132,
+            "audio": "data/earnings22_test/sample_000132.wav",
+            "reference": "with manchester united we have already achieved more than eleven point seven billion impressions of our logo since the partnership officially started mid last year",
+            "hypotheses": {
+                "greedy": "with manchesthe united we have already achieved more than eleven point seven billion impressions of our logo sint the partmertsip officially tarted mid lateer"
+            }
+        },
+        {
+            "id": 133,
+            "audio": "data/earnings22_test/sample_000133.wav",
+            "reference": "but before we get to some of the use cases i would like to present the development of billings in the enterprise business",
+            "hypotheses": {
+                "greedy": "but before weget to some of the euthcated i would like to present the development of billings in the enterprise business no"
+            }
+        },
+        {
+            "id": 134,
+            "audio": "data/earnings22_test/sample_000134.wav",
+            "reference": "uh i think what we've seen here is uh a good build of the pipeline especially in the americas",
+            "hypotheses": {
+                "greedy": "a i think what wev seemyere is  a good bailt off the pipeline ispeciin the marricants oman"
+            }
+        },
+        {
+            "id": 135,
+            "audio": "data/earnings22_test/sample_000135.wav",
+            "reference": "i think we still have very strong financial firepower to pursue m a",
+            "hypotheses": {
+                "greedy": "i think we steal hav very stong financifya power to prsue emin aces th"
+            }
+        },
+        {
+            "id": 136,
+            "audio": "data/earnings22_test/sample_000136.wav",
+            "reference": "if you have a question for our speakers please dial one on your telephone keypad now to enter the queue",
+            "hypotheses": {
+                "greedy": "if you have a question for us because please ti your on on your telephone keap at now t and i a cu"
+            }
+        },
+        {
+            "id": 137,
+            "audio": "data/earnings22_test/sample_000137.wav",
+            "reference": "and i think now with a leverage of one point three times we had to answer the question",
+            "hypotheses": {
+                "greedy": "ris nothing now with the leverige of one point three times be head to unser the question an"
+            }
+        },
+        {
+            "id": 138,
+            "audio": "data/earnings22_test/sample_000138.wav",
+            "reference": "obviously we've made this uh guidance now assuming roughly stable uh currency rates uh what we currently see",
+            "hypotheses": {
+                "greedy": "albisly ves made that a gids now its you wing rougly stabe a cornzerates what re current to see"
+            }
+        },
+        {
+            "id": 139,
+            "audio": "data/earnings22_test/sample_000139.wav",
+            "reference": "so you're saying that there's almost no contribution from upskill and uh viskupic um in q4",
+            "hypotheses": {
+                "greedy": "d so you are saying that there is almost no contrabution from opski lin a vis copi cam in"
+            }
+        },
+        {
+            "id": 140,
+            "audio": "data/earnings22_test/sample_000140.wav",
+            "reference": "the great success is clearly our collaboration with nsf international",
+            "hypotheses": {
+                "greedy": "a great succet and clearly our callaboration with anetha pintenacinal i"
+            }
+        },
+        {
+            "id": 141,
+            "audio": "data/earnings22_test/sample_000141.wav",
+            "reference": "but i think at the moment it really doesn't matter that much",
+            "hypotheses": {
+                "greedy": "arlink at the moment a dit really doesn' matta lat much"
+            }
+        },
+        {
+            "id": 142,
+            "audio": "data/earnings22_test/sample_000142.wav",
+            "reference": "overall it's a well balanced mix of use cases clearly with a strong presence within remote access and control of all sorts of equipment and devices including access and control of non it equipment",
+            "hypotheses": {
+                "greedy": "over all its a wild ballance mix of youthcases clearly with the strong presence within remote axes and control of all sorts of ecrppant and devices including axes and control of nonatiequipmen t"
+            }
+        },
+        {
+            "id": 143,
+            "audio": "data/earnings22_test/sample_000143.wav",
+            "reference": "i think the continued implementation of the meas measures which we talked about and updated you today uh will further positively impact this development",
+            "hypotheses": {
+                "greedy": "i think the continued implamentation of the method measures which we talked about and obtated you to day a we further posively impect  this development ta"
+            }
+        },
+        {
+            "id": 144,
+            "audio": "data/earnings22_test/sample_000144.wav",
+            "reference": "this leaves teamviewer with an average net retention rate of ninety eight over the past twelve months underlying our success in billing lasting customer relationships",
+            "hypotheses": {
+                "greedy": "this leaves team bur with an average neteretentionrys of ninety eight per cent or the pathzof month on a lying our success in burding laughting customar relationships i"
+            }
+        },
+        {
+            "id": 145,
+            "audio": "data/earnings22_test/sample_000145.wav",
+            "reference": "can you provide a bit more color on how we should think about it",
+            "hypotheses": {
+                "greedy": "adetions cam providovan mortallin how we should think about it pa"
+            }
+        },
+        {
+            "id": 146,
+            "audio": "data/earnings22_test/sample_000146.wav",
+            "reference": "and and just a quick follow up",
+            "hypotheses": {
+                "greedy": "ina just qrickfelop a"
+            }
+        },
+        {
+            "id": 147,
+            "audio": "data/earnings22_test/sample_000147.wav",
+            "reference": "uh in terms of margin that's overall necessarily right",
+            "hypotheses": {
+                "greedy": "nd importance in jurms of marchin et orlod eter riht"
+            }
+        },
+        {
+            "id": 148,
+            "audio": "data/earnings22_test/sample_000148.wav",
+            "reference": "uh and if you kind of take that thirty to fifty thousand subscriber addition guidance um something which uh we can do with a later stage if we need to and want to",
+            "hypotheses": {
+                "greedy": "a and if you cannot take that thirty to fifty thousand onscribe a a diiin guidanth am withsomething which a we can do wher he latee thach or if we need to unwant to"
+            }
+        },
+        {
+            "id": 149,
+            "audio": "data/earnings22_test/sample_000149.wav",
+            "reference": "uh i think clearly since then we've generated significant amount of cash uh and delivered pretty fast now to one point three times",
+            "hypotheses": {
+                "greedy": "i think clearly since then we have generated significant amount of kach and delevar penty fast now to one point three times"
+            }
+        },
+        {
+            "id": 150,
+            "audio": "data/earnings22_test/sample_000150.wav",
+            "reference": "uh we still have significant amount of taxes carry forward",
+            "hypotheses": {
+                "greedy": "ilefsignificant demound of textoe as carry forworde"
+            }
+        },
+        {
+            "id": 151,
+            "audio": "data/earnings22_test/sample_000151.wav",
+            "reference": "clearly as a technology company we traditionally have low capex and i think that capex saw some peak during the last couple of years but has now come down substantially and will remain at those levels for the foreseeable future",
+            "hypotheses": {
+                "greedy": "cerlias a ticnoty company wild traditionally havlo cepics and i think that kepic to sam pap during the last coupl offiars but has now come downs offenchely and will remain at those leverds for the forseable future we"
+            }
+        },
+        {
+            "id": 152,
+            "audio": "data/earnings22_test/sample_000152.wav",
+            "reference": "so all in all i would feel well under control but it's getting it's getting tougher for sure",
+            "hypotheses": {
+                "greedy": "nd so all in all i would feel well un the control about its getting its getting tapor fosh"
+            }
+        },
+        {
+            "id": 153,
+            "audio": "data/earnings22_test/sample_000153.wav",
+            "reference": "as always we'll conclude today's call with a q a following the presentation",
+            "hypotheses": {
+                "greedy": "n highlife as all wach will conclude the day hat called wit a cuin e folling in the presentation"
+            }
+        },
+        {
+            "id": 154,
+            "audio": "data/earnings22_test/sample_000154.wav",
+            "reference": "yeah maybe it's just on ub max with you because i think all of those three founders play a people a very important role within the organization",
+            "hypotheses": {
+                "greedy": "on that nd teri may be cose o ne we macture you because i think all of those free foundrs blay er people are very important rold within te orgisation"
+            }
+        },
+        {
+            "id": 155,
+            "audio": "data/earnings22_test/sample_000155.wav",
+            "reference": "why is that",
+            "hypotheses": {
+                "greedy": "whyis th"
+            }
+        },
+        {
+            "id": 156,
+            "audio": "data/earnings22_test/sample_000156.wav",
+            "reference": "uh in terms of performance uh fourth quarter billings growth was especially strong in the apac region",
+            "hypotheses": {
+                "greedy": "ah in dras of richa performance the fourth orl piling srowwewas e specally strong gapic reagion lan"
+            }
+        },
+        {
+            "id": 157,
+            "audio": "data/earnings22_test/sample_000157.wav",
+            "reference": "um and we are uh we have an attractive offer which we call teamviewer remote access which is for this individual users situation",
+            "hypotheses": {
+                "greedy": "amand we ah ah we have an attractive offer which we calld timiur remote axet which is foll this individual uo the situation"
+            }
+        },
+        {
+            "id": 158,
+            "audio": "data/earnings22_test/sample_000158.wav",
+            "reference": "in the fourth quarter however the number of subscribers remained essentially flat because of our decision to suspend free to paid monetization campaigns to further develop our ecosystem",
+            "hypotheses": {
+                "greedy": "in the fourth quarter however the number of subscribars remained essentially flant because of our decision to a suspandfry topate moni havation compains to further develop our ecoiom"
+            }
+        },
+        {
+            "id": 159,
+            "audio": "data/earnings22_test/sample_000159.wav",
+            "reference": "that's obviously the uh the target which we gave ourselves at the cmd",
+            "hypotheses": {
+                "greedy": "let's over to that  ar te carge which we gave our seves at a tm dam a w"
+            }
+        },
+        {
+            "id": 160,
+            "audio": "data/earnings22_test/sample_000160.wav",
+            "reference": "obviously uh this is driven by our continuously increased adjusted ebitda on one hand and on the other hand we consistently generate significant amount of free cash flows",
+            "hypotheses": {
+                "greedy": "obviously this is driven by our continuously increased a chati ibi de on one hand and on the other hand we consuistently generated significant amound of free cachros an"
+            }
+        },
+        {
+            "id": 161,
+            "audio": "data/earnings22_test/sample_000161.wav",
+            "reference": "absolutely",
+            "hypotheses": {
+                "greedy": "am a"
+            }
+        },
+        {
+            "id": 162,
+            "audio": "data/earnings22_test/sample_000162.wav",
+            "reference": "in addition to that we partner with leading multinational technology partners such as or nss",
+            "hypotheses": {
+                "greedy": "in addition to that we part of the bting matinatona tecnology partnor such as mudix rier or anniphis"
+            }
+        },
+        {
+            "id": 163,
+            "audio": "data/earnings22_test/sample_000163.wav",
+            "reference": "and this should nurture our free user ecosystem but will at the same time increase the seasonality of our subscriber goals with the majority of growth weighted to the second half of the year",
+            "hypotheses": {
+                "greedy": "and this should naa our free you tat e could sipthem but will at the same time increase the cidinality of aurtho'scravergoth with ta majority of growth weaighted to the second half of the yem we"
+            }
+        },
+        {
+            "id": 164,
+            "audio": "data/earnings22_test/sample_000164.wav",
+            "reference": "uh we felt now it's time to probably better ring fence our field a bit more",
+            "hypotheses": {
+                "greedy": "ah we feld now with time to probly beta ring fenth our for you debatmore a"
+            }
+        },
+        {
+            "id": 165,
+            "audio": "data/earnings22_test/sample_000165.wav",
+            "reference": "uh probably suspended free to paid campaigns so wouldn't expect significant net adds in these two quarters from today's perspective",
+            "hypotheses": {
+                "greedy": "ah probably a sufpended free to payn compaints sough would n expect the musican net ats in these wo quatos thumb from t det pespectis"
+            }
+        },
+        {
+            "id": 166,
+            "audio": "data/earnings22_test/sample_000166.wav",
+            "reference": "uh and i i don't think it's going to change going forward",
+            "hypotheses": {
+                "greedy": "ah and i i don't think it's gone a change going for it"
+            }
+        },
+        {
+            "id": 167,
+            "audio": "data/earnings22_test/sample_000167.wav",
+            "reference": "the next question is coming from victor chang at bank of america",
+            "hypotheses": {
+                "greedy": "the next questions come from witdecan at bangl of america"
+            }
+        },
+        {
+            "id": 168,
+            "audio": "data/earnings22_test/sample_000168.wav",
+            "reference": "moving on to cash flows uh i think very strong set of numbers",
+            "hypotheses": {
+                "greedy": "moving on tukechloths a i think very strong set of lumbers re"
+            }
+        },
+        {
+            "id": 169,
+            "audio": "data/earnings22_test/sample_000169.wav",
+            "reference": "i think the i think the honest answer is that we we have in the crm of course we have a clear understanding of what the customers do",
+            "hypotheses": {
+                "greedy": "tis than toe le thing gonestantheris that we we have in the ciorm of course we have  weave clea understanding of what the custom a do ah bu"
+            }
+        },
+        {
+            "id": 170,
+            "audio": "data/earnings22_test/sample_000170.wav",
+            "reference": "and then on reductions in some places where we felt we are not in the best possible position",
+            "hypotheses": {
+                "greedy": "and then amon reductions in some places where we hald we arnot in the bet potble positions a"
+            }
+        },
+        {
+            "id": 171,
+            "audio": "data/earnings22_test/sample_000171.wav",
+            "reference": "that's nice",
+            "hypotheses": {
+                "greedy": "that's nice"
+            }
+        },
+        {
+            "id": 172,
+            "audio": "data/earnings22_test/sample_000172.wav",
+            "reference": "first of all i would like to give you an overview of how the two businesses have developed in two thousand and twenty one",
+            "hypotheses": {
+                "greedy": "first of all i would like to give yin over viou of how the two busineses have developed in twenty twenty one"
+            }
+        },
+        {
+            "id": 173,
+            "audio": "data/earnings22_test/sample_000173.wav",
+            "reference": "your line is now open",
+            "hypotheses": {
+                "greedy": "cilinas malt o"
+            }
+        },
+        {
+            "id": 174,
+            "audio": "data/earnings22_test/sample_000174.wav",
+            "reference": "we further improved our churn rate throughout the year and increased the asp",
+            "hypotheses": {
+                "greedy": "re further improve thou ar curnrate throughout the year and increase the e p f"
+            }
+        },
+        {
+            "id": 175,
+            "audio": "data/earnings22_test/sample_000175.wav",
+            "reference": "we cover it management including monitoring of it environment patch management endpoint protection",
+            "hypotheses": {
+                "greedy": "we have a ighty management including monetoring of atian vimn pachmenaghment and pin protection you"
+            }
+        },
+        {
+            "id": 176,
+            "audio": "data/earnings22_test/sample_000176.wav",
+            "reference": "so really supporting uh other workers and employees which are not in the office environment but which are outside the office environment",
+            "hypotheses": {
+                "greedy": "so really suporting  ather workers and imployes which are not in the office environment but which are outside the ofice environment o"
+            }
+        },
+        {
+            "id": 177,
+            "audio": "data/earnings22_test/sample_000177.wav",
+            "reference": "and as we said before likely the same will be q1 q2",
+            "hypotheses": {
+                "greedy": "and as we sirty four likeleav ah the same will be if you want you to"
+            }
+        },
+        {
+            "id": 178,
+            "audio": "data/earnings22_test/sample_000178.wav",
+            "reference": "so i wouldn't say there there is no change in the competitive landscape",
+            "hypotheses": {
+                "greedy": "though i wouldn't say there there is no change in the compatitive landscape"
+            }
+        },
+        {
+            "id": 179,
+            "audio": "data/earnings22_test/sample_000179.wav",
+            "reference": "uh don't monetize too much",
+            "hypotheses": {
+                "greedy": "ah don't want it tive too much"
+            }
+        },
+        {
+            "id": 180,
+            "audio": "data/earnings22_test/sample_000180.wav",
+            "reference": "the program is scheduled to start tomorrow uh and is also expected to be completed within the fiscal year two thousand and twenty two",
+            "hypotheses": {
+                "greedy": "the brok remite a scatiotu start to morrow ah an is alzo expected to be completed with in the piscily atrentetwenty two al"
+            }
+        },
+        {
+            "id": 181,
+            "audio": "data/earnings22_test/sample_000181.wav",
+            "reference": "obviously we have a strong net retention rate in the enterprise business overall it's one hundred and five",
+            "hypotheses": {
+                "greedy": "obecebu a we have a strong at rotantiuratan a inthe prite business or warters a undred five perc"
+            }
+        },
+        {
+            "id": 182,
+            "audio": "data/earnings22_test/sample_000182.wav",
+            "reference": "exactly if that if that is what you're after",
+            "hypotheses": {
+                "greedy": "and i can get up defthided what yo"
+            }
+        },
+        {
+            "id": 183,
+            "audio": "data/earnings22_test/sample_000183.wav",
+            "reference": "your line is now open",
+            "hypotheses": {
+                "greedy": "yilline a snop an"
+            }
+        },
+        {
+            "id": 184,
+            "audio": "data/earnings22_test/sample_000184.wav",
+            "reference": "uh i think the important step at cmd was to give precise color around those two different segments smb and enterprise",
+            "hypotheses": {
+                "greedy": "time aatin important thebedety gi was to give precise collor around dhose two wdifferent secments ezemb and endaprize"
+            }
+        },
+        {
+            "id": 185,
+            "audio": "data/earnings22_test/sample_000185.wav",
+            "reference": "that's helpful",
+            "hypotheses": {
+                "greedy": "osa"
+            }
+        },
+        {
+            "id": 186,
+            "audio": "data/earnings22_test/sample_000186.wav",
+            "reference": "a couple of questions from me",
+            "hypotheses": {
+                "greedy": "copliquestions from me"
+            }
+        },
+        {
+            "id": 187,
+            "audio": "data/earnings22_test/sample_000187.wav",
+            "reference": "i think america's performance especially by the enterprise sales and emea recorded good smb resides and also strong pipeline conversion but less strong than americans overall",
+            "hypotheses": {
+                "greedy": "i think americas performance is becally trowen by the enterprise ales an amar recorded good as an b recides and all those strong typerine conversion but less strong than the americas ovord tho"
+            }
+        },
+        {
+            "id": 188,
+            "audio": "data/earnings22_test/sample_000188.wav",
+            "reference": "there was leadersh leadership change a bit later in the year in the fourth quarter",
+            "hypotheses": {
+                "greedy": "nd there was leieduchefe uche change a bit later in the year in the fourth quarter"
+            }
+        },
+        {
+            "id": 189,
+            "audio": "data/earnings22_test/sample_000189.wav",
+            "reference": "but that being said i would feel very comfortable to take up leverage again if the right target comes our way",
+            "hypotheses": {
+                "greedy": "by that being said i would fee very comfortable to take up leverage again if the ry taget comes i il"
+            }
+        },
+        {
+            "id": 190,
+            "audio": "data/earnings22_test/sample_000190.wav",
+            "reference": "uh if we take a look at the revenues from the subscription model only they grew sixteen in the fourth quarter and twenty twenty two in ' twenty one overall",
+            "hypotheses": {
+                "greedy": "line a if you take a look at the reminues from the subscription mottle only they crew sixteen percent in the fourth quarter and twenty twenty two percent in twenty one oveall t"
+            }
+        },
+        {
+            "id": 191,
+            "audio": "data/earnings22_test/sample_000191.wav",
+            "reference": "now let's take a look uh at our billings composition on the next slides",
+            "hypotheses": {
+                "greedy": "no let's take a look at our pining's composition on the next lins o"
+            }
+        },
+        {
+            "id": 192,
+            "audio": "data/earnings22_test/sample_000192.wav",
+            "reference": "and and we have an eye on that",
+            "hypotheses": {
+                "greedy": "ande and be have an isle at te buto"
+            }
+        },
+        {
+            "id": 193,
+            "audio": "data/earnings22_test/sample_000193.wav",
+            "reference": "and i think that's what the level of which we have already achieved",
+            "hypotheses": {
+                "greedy": "ind nothink tats what the level which we have already achieved"
+            }
+        },
+        {
+            "id": 194,
+            "audio": "data/earnings22_test/sample_000194.wav",
+            "reference": "and then obviously we deliberated and conducted quite some intense reviews about balance sheet structure and h what is a reasonable balance sheet for us what gives us uh still enough headroom to invest into the business",
+            "hypotheses": {
+                "greedy": "and then over to be deliberated and conducted quit om intense reviews about banchy structure and a habodier reatma banchi faks what givs ats a stall enough headroom to invest into the business"
+            }
+        },
+        {
+            "id": 195,
+            "audio": "data/earnings22_test/sample_000195.wav",
+            "reference": "such as for example our ar solution",
+            "hypotheses": {
+                "greedy": "thut jas for example oa a othedus n"
+            }
+        },
+        {
+            "id": 196,
+            "audio": "data/earnings22_test/sample_000196.wav",
+            "reference": "yeah",
+            "hypotheses": {
+                "greedy": "weiht"
+            }
+        },
+        {
+            "id": 197,
+            "audio": "data/earnings22_test/sample_000197.wav",
+            "reference": "i expect it to improve uh slightly going forward as well as become a more uh enterprise uh biased business",
+            "hypotheses": {
+                "greedy": "n i expected to improve as lightly going forward as well as wed become a more  enterprise bised business"
+            }
+        },
+        {
+            "id": 198,
+            "audio": "data/earnings22_test/sample_000198.wav",
+            "reference": "i think started in the us and also has reached europe",
+            "hypotheses": {
+                "greedy": "having starthed in dyueth and and ou ad olso reached europe"
+            }
+        },
+        {
+            "id": 199,
+            "audio": "data/earnings22_test/sample_000199.wav",
+            "reference": "but are you also seeing any any progress or evidence around some of the larger deals",
+            "hypotheses": {
+                "greedy": "but are you alse of seeing any an progressr evidence ron some of the loge adeals"
+            }
+        }
+    ]
+}

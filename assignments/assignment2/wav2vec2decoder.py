@@ -83,8 +83,18 @@ class Wav2Vec2Decoder:
         Returns:
             str: Decoded transcript.
         """
-        # <YOUR CODE GOES HERE>
-        raise NotImplementedError
+        log_probs = torch.log_softmax(logits, dim=-1)
+        best_path = torch.argmax(log_probs, dim=-1).tolist()
+        
+        collapsed_path = []
+        prev_token = None
+        for token in best_path:
+            if token != prev_token:
+                if token != self.blank_token_id:
+                    collapsed_path.append(token)
+            prev_token = token
+            
+        return self._ids_to_text(collapsed_path)
 
     def beam_search_decode(self, logits: torch.Tensor, return_beams: bool = False):
         """
@@ -103,10 +113,60 @@ class Wav2Vec2Decoder:
                 List[Tuple[List[int], float]] - list of (token_ids, log_prob)
                     tuples sorted best-first (if return_beams=True).
         """
-        # <YOUR CODE GOES HERE>
+        log_probs = torch.log_softmax(logits, dim=-1)
+        T, V = log_probs.shape
+        
+        # beam: {prefix_tuple: (prob_blank, prob_non_blank)}
+        beam = {(): (0.0, float('-inf'))}
+        
+        for t in range(T):
+            probs_t = log_probs[t].tolist()
+            new_beam = {}
+            
+            for prefix, (p_b, p_nb) in beam.items():
+                p_total = _log_add(p_b, p_nb)
+                
+                # 1. Extend with blank
+                if prefix not in new_beam:
+                    new_beam[prefix] = (float('-inf'), float('-inf'))
+                n_p_b, n_p_nb = new_beam[prefix]
+                new_beam[prefix] = (_log_add(n_p_b, p_total + probs_t[self.blank_token_id]), n_p_nb)
+                
+                # 2. Extend with non-blank
+                for c in range(V):
+                    if c == self.blank_token_id:
+                        continue
+                        
+                    prob_c = probs_t[c]
+                    extended_prefix = prefix + (c,)
+                    
+                    if len(prefix) > 0 and c == prefix[-1]:
+                        # Extending length (requires passing through blank token)
+                        if extended_prefix not in new_beam:
+                            new_beam[extended_prefix] = (float('-inf'), float('-inf'))
+                        e_p_b, e_p_nb = new_beam[extended_prefix]
+                        new_beam[extended_prefix] = (e_p_b, _log_add(e_p_nb, p_b + prob_c))
+                        
+                        # Collapsing (same character, no blank token)
+                        n_p_b, n_p_nb = new_beam[prefix]
+                        new_beam[prefix] = (n_p_b, _log_add(n_p_nb, p_nb + prob_c))
+                    else:
+                        # Adding entirely new character
+                        if extended_prefix not in new_beam:
+                            new_beam[extended_prefix] = (float('-inf'), float('-inf'))
+                        e_p_b, e_p_nb = new_beam[extended_prefix]
+                        new_beam[extended_prefix] = (e_p_b, _log_add(e_p_nb, p_total + prob_c))
+                        
+            # Prune
+            sorted_beam = sorted(new_beam.items(), key=lambda x: _log_add(x[1][0], x[1][1]), reverse=True)
+            beam = dict(sorted_beam[:self.beam_width])
+
+        res = [(list(prefix), _log_add(p_b, p_nb)) for prefix, (p_b, p_nb) in beam.items()]
+        res.sort(key=lambda x: x[1], reverse=True)
+        
         if return_beams:
-            raise NotImplementedError
-        raise NotImplementedError
+            return res
+        return self._ids_to_text(res[0][0])
 
     def beam_search_with_lm(self, logits: torch.Tensor) -> str:
         """
@@ -122,8 +182,88 @@ class Wav2Vec2Decoder:
         """
         if not self.lm_model:
             raise ValueError("KenLM model required for LM shallow fusion")
-        # <YOUR CODE GOES HERE>
-        raise NotImplementedError
+        log_probs = torch.log_softmax(logits, dim=-1)
+        T, V = log_probs.shape
+        
+        # beam: {prefix_tuple: (prob_blank, prob_non_blank)}
+        beam = {(): (0.0, float('-inf'))}
+        
+        for t in range(T):
+            probs_t = log_probs[t].tolist()
+            new_beam = {}
+            
+            for prefix, (p_b, p_nb) in beam.items():
+                p_total = _log_add(p_b, p_nb)
+                
+                # 1. Extend with blank
+                if prefix not in new_beam:
+                    new_beam[prefix] = (float('-inf'), float('-inf'))
+                n_p_b, n_p_nb = new_beam[prefix]
+                new_beam[prefix] = (_log_add(n_p_b, p_total + probs_t[self.blank_token_id]), n_p_nb)
+                
+                # 2. Extend with non-blank
+                for c in range(V):
+                    if c == self.blank_token_id:
+                        continue
+                        
+                    prob_c = probs_t[c]
+                    extended_prefix = prefix + (c,)
+                    
+                    if len(prefix) > 0 and c == prefix[-1]:
+                        # Extending length (requires passing through blank)
+                        if extended_prefix not in new_beam:
+                            new_beam[extended_prefix] = (float('-inf'), float('-inf'))
+                        e_p_b, e_p_nb = new_beam[extended_prefix]
+                        new_beam[extended_prefix] = (e_p_b, _log_add(e_p_nb, p_b + prob_c))
+                        
+                        # Collapsing
+                        n_p_b, n_p_nb = new_beam[prefix]
+                        new_beam[prefix] = (n_p_b, _log_add(n_p_nb, p_nb + prob_c))
+                    else:
+                        if extended_prefix not in new_beam:
+                            new_beam[extended_prefix] = (float('-inf'), float('-inf'))
+                        e_p_b, e_p_nb = new_beam[extended_prefix]
+                        new_beam[extended_prefix] = (e_p_b, _log_add(e_p_nb, p_total + prob_c))
+                        
+            # Prune with LM scoring
+            # We must decode the token IDs to text and score with kenlm
+            scored_beam = []
+            for prefix, (p_b, p_nb) in new_beam.items():
+                log_p_acoustic = _log_add(p_b, p_nb)
+                
+                # Compute LM score if there's text
+                text = self._ids_to_text(prefix)
+                if not text:
+                    log_p_lm = 0.0
+                    num_words = 0
+                else:
+                    # score returns log10 probabilities
+                    # KenLM uses base 10 by default; multiply by ln(10) ~ 2.302585 to convert to natural log
+                    # The assignment may or may not require this conversion, usually it does for alpha weighting
+                    # We will follow the assignment formula: score = log_p_acoustic + alpha * log_p_lm + beta * num_words
+                    # Note: KenLM score(text) returns standard log10(P). Let log_p_lm be that directly.
+                    log_p_lm = self.lm_model.score(text)
+                    num_words = len(text.split())
+                
+                total_score = log_p_acoustic + self.alpha * log_p_lm + self.beta * num_words
+                scored_beam.append((prefix, new_beam[prefix], total_score))
+                
+            scored_beam.sort(key=lambda x: x[2], reverse=True)
+            beam = {prefix: scores for prefix, scores, _ in scored_beam[:self.beam_width]}
+
+        # Final rescored res
+        final_res = []
+        for prefix, (p_b, p_nb) in beam.items():
+            text = self._ids_to_text(prefix)
+            log_p_lm = self.lm_model.score(text) if text else 0.0
+            num_words = len(text.split()) if text else 0
+            
+            log_p_acoustic = _log_add(p_b, p_nb)
+            total_score = log_p_acoustic + self.alpha * log_p_lm + self.beta * num_words
+            final_res.append((prefix, total_score))
+            
+        final_res.sort(key=lambda x: x[1], reverse=True)
+        return self._ids_to_text(final_res[0][0])
 
     def lm_rescore(self, beams: List[Tuple[List[int], float]]) -> str:
         """
@@ -138,8 +278,23 @@ class Wav2Vec2Decoder:
         """
         if not self.lm_model:
             raise ValueError("KenLM model required for LM rescoring")
-        # <YOUR CODE GOES HERE>
-        raise NotImplementedError
+        rescored_beams = []
+        
+        for token_ids, log_p_acoustic in beams:
+            text = self._ids_to_text(token_ids)
+            
+            if not text:
+                log_p_lm = 0.0
+                num_words = 0
+            else:
+                log_p_lm = self.lm_model.score(text)
+                num_words = len(text.split())
+                
+            total_score = log_p_acoustic + self.alpha * log_p_lm + self.beta * num_words
+            rescored_beams.append((text, total_score))
+            
+        rescored_beams.sort(key=lambda x: x[1], reverse=True)
+        return rescored_beams[0][0]
 
     # -----------------------------------------------------------------------
     # Provided — do NOT modify
