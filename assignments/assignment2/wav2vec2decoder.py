@@ -1,4 +1,5 @@
 import math
+import heapq
 from typing import List, Tuple
 
 import kenlm
@@ -158,8 +159,8 @@ class Wav2Vec2Decoder:
                         new_beam[extended_prefix] = (e_p_b, _log_add(e_p_nb, p_total + prob_c))
                         
             # Prune
-            sorted_beam = sorted(new_beam.items(), key=lambda x: _log_add(x[1][0], x[1][1]), reverse=True)
-            beam = dict(sorted_beam[:self.beam_width])
+            best_items = heapq.nlargest(self.beam_width, new_beam.items(), key=lambda x: _log_add(x[1][0], x[1][1]))
+            beam = dict(best_items)
 
         res = [(list(prefix), _log_add(p_b, p_nb)) for prefix, (p_b, p_nb) in beam.items()]
         res.sort(key=lambda x: x[1], reverse=True)
@@ -248,8 +249,8 @@ class Wav2Vec2Decoder:
                 total_score = log_p_acoustic + self.alpha * log_p_lm + self.beta * num_words
                 scored_beam.append((prefix, new_beam[prefix], total_score))
                 
-            scored_beam.sort(key=lambda x: x[2], reverse=True)
-            beam = {prefix: scores for prefix, scores, _ in scored_beam[:self.beam_width]}
+            best_scored = heapq.nlargest(self.beam_width, scored_beam, key=lambda x: x[2])
+            beam = {prefix: scores for prefix, scores, _ in best_scored}
 
         # Final rescored res
         final_res = []
